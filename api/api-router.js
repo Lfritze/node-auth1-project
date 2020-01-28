@@ -47,9 +47,9 @@ router.post("/hash", (req, res) => {
 router.get("/logout", (req, res) => {
   if (req.session) {
     req.session.destroy();
-    res.status(200).json({ message: "Bye Felicia!" });
+    res.status(200).json({ message: "Bye dude!" });
   } else {
-    res.status(200).json({ message: "Thanks for playing!" });
+    res.status(200).json({ message: "Thanks for hanging!" });
   }
 });
 
